@@ -1,0 +1,28 @@
+name: ai_training
+description: "A fun AI translaror game implemented using Flutter and Google AI Dart SDK."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^4.0.0
+  flutter_bloc: ^8.1.4
+  google_generative_ai: ^0.4.4
+  firebase_ai: ^3.1.0
+  screenshot: ^3.0.0
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/terminator.gif
+    - assets/terminator_no.gif
