@@ -37,12 +37,6 @@
 * 🎭 Delightful UX touches: **loading GIF** and **error GIF** ("T‑800/T‑1000" vibe) for edge cases.
 * 🛡️ Defensive handling for “no English text found” with a playful fallback.
 
-> **Employer highlights**
->
-> * Clean, readable layering: **presentation / cubit / services**, no God classes.
-> * Multimodal prompt-engineering with **InlineDataPart** (image JPEG) + deterministic parsing of model output.
-> * Simple, portable Firebase setup that works for both iOS & Android.
-
 ## How it works
 
 1. User writes text on the canvas → the widget stack renders via **CustomPainter**.
