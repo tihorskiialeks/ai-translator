@@ -45,17 +45,6 @@
 4. `firebase_ai` client sends a **multi‑part prompt** (instruction + inline image) to **Gemini 2.0 Flash**.
 5. The service returns translated text; the UI updates accordingly.
 
-Mermaid overview:
-
-```mermaid
-flowchart LR
-  UI[DrawAndTranslatePage] -->|events| CUBIT[TranslatorCubit]
-  CUBIT -->|recognizeAndTranslate(Uint8List)| SVC[AiTranslatorService]
-  SVC -->|generateContent| GEM[Gemini 2.0 Flash
-(Firebase AI)]
-  GEM -->|text| CUBIT
-  CUBIT -->|state| UI
-```
 
 ## Project structure (excerpt)
 
